@@ -56,6 +56,41 @@
             padding-bottom: 10px;
         }
 
+        h3 {
+            color: #667eea;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .job-meta {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .degree {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .school-meta {
+            color: #666;
+            font-size: 0.95em;
+        }
+
         ul {
             list-style: none;
             margin-left: 20px;
@@ -104,6 +139,14 @@
         .project-card h3 {
             color: #667eea;
             margin-bottom: 8px;
+            margin-top: 0;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            color: #666;
         }
 
         @media (max-width: 768px) {
@@ -123,36 +166,87 @@
 </head>
 <body>
     <header>
-        <h1>Zhang Ruiqi</h1>
-        <p>Software Developer | Engineer</p>
+        <h1>Ruiqi (Rachel) Zhang</h1>
+        <p>Software Engineer | Full Stack Developer</p>
     </header>
 
     <div class="container">
+        <section class="contact-info">
+            <p>Los Gatos, CA | <a href="mailto:zrq77560371@gmail.com">zrq77560371@gmail.com</a> | (669)-258-6927 | <a href="https://www.linkedin.com/in/ruiqi-rachel-zhang-baa576137" target="_blank">LinkedIn</a> | <a href="https://github.com/Zhang-Ruiqi" target="_blank">GitHub</a></p>
+        </section>
+
         <section>
             <h2>About Me</h2>
-            <p>Welcome to my portfolio. I'm a passionate developer focused on creating clean, efficient, and user-friendly solutions.</p>
+            <p>Experienced Software Engineer with 6+ years of expertise in iOS app development, backend systems, and full-stack solutions. Proven track record in leading development of high-scale applications serving millions of users, implementing secure payment workflows, and optimizing system performance. Passionate about creating clean, efficient, and user-friendly solutions.</p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            
+            <h3>Senior Software Engineer</h3>
+            <div class="job-title">Plato Team, Inc – Santa Clara, CA</div>
+            <div class="job-meta">Jan 2018 – May 2024</div>
+            <ul>
+                <li>Led iOS app development (Swift) for Plato, a social & gaming platform with 1.5M DAU and 50k concurrent users.</li>
+                <li>Designed and implemented secure payment workflows (in-app purchases, subscriptions, digital assets).</li>
+                <li>Built personalization features: chat bubble styles, profile customization (bio, name color, Plato age), and a virtual goods marketplace (badges, frames, banners).</li>
+                <li>Developed multiplayer games (JavaScript/TypeScript, WebGL), including:
+                    <ul>
+                        <li>Bankroll – Monopoly-like board game, independently designed and developed.</li>
+                        <li>Go (Weiqi) – Strategy game emphasizing algorithmic logic and game state management.</li>
+                        <li>Plus 6+ additional titles (Basketball, Minesweeper, Big Two, Bullsit, Zombie, etc.).</li>
+                    </ul>
+                </li>
+                <li>Owned App Store release cycle, CI/CD pipelines, crash monitoring, and performance optimization, achieving 99.9% uptime.</li>
+            </ul>
+
+            <h3>Software Engineer – Backend Developer</h3>
+            <div class="job-title">Perfect World, Inc – Beijing, CN</div>
+            <div class="job-meta">Sep 2014 – Mar 2016</div>
+            <ul>
+                <li>Developed backend server for Final Fantasy: The Awakening (MMO game) in a distributed system.</li>
+                <li>Tech stack: Java, Spring, Hibernate, Apache MINA, MySQL.</li>
+                <li>Implemented features: lottery system, hero growth, equipment enhancement.</li>
+                <li>Maintained logging and account management systems for millions of users.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="degree">M.S. Information Systems Engineering and Management</div>
+                <div class="school-meta">Harrisburg University of Science and Technology, USA | Aug 2021 – Mar 2023</div>
+            </div>
+            <div class="education-item">
+                <div class="degree">B.S. Computer Science</div>
+                <div class="school-meta">Zhengzhou University, China | Sep 2009 – Jul 2013</div>
+            </div>
         </section>
 
         <section>
             <h2>Skills</h2>
             <ul>
-                <li>Web Development (HTML, CSS, JavaScript)</li>
-                <li>Backend Development (Node.js, Python)</li>
-                <li>Database Design & Management</li>
-                <li>Version Control & Git</li>
-                <li>Problem Solving & Algorithms</li>
+                <li><strong>Languages:</strong> Swift, Objective-C, Java, JavaScript, TypeScript, Python</li>
+                <li><strong>Mobile Development:</strong> iOS (UIKit, SwiftUI), App Store deployment</li>
+                <li><strong>Backend & Databases:</strong> Java, Spring, MySQL, distributed systems</li>
+                <li><strong>Payments & Transactions:</strong> In-app purchase, subscriptions, digital wallet features</li>
+                <li><strong>Other:</strong> REST APIs, Agile/Scrum, CI/CD, Git, Localization, WebGL</li>
             </ul>
         </section>
 
         <section>
-            <h2>Projects</h2>
+            <h2>Projects Highlights</h2>
             <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of your first project and technologies used.</p>
+                <h3>Plato Social Gaming Platform</h3>
+                <p>Led iOS development for a social gaming platform serving 1.5M DAU. Implemented secure payment workflows, multiplayer game engine, and personalization features. Technologies: Swift, JavaScript/TypeScript, WebGL.</p>
             </div>
             <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of your second project and technologies used.</p>
+                <h3>Multiplayer Game Development</h3>
+                <p>Designed and developed multiple multiplayer games including Bankroll (Monopoly-like board game), Go (strategy game), and 6+ additional titles with focus on algorithmic logic and state management.</p>
+            </div>
+            <div class="project-card">
+                <h3>Final Fantasy: The Awakening Backend</h3>
+                <p>Developed backend server infrastructure for MMO game supporting millions of concurrent users. Implemented game features including lottery system, hero growth, and equipment enhancement. Tech: Java, Spring, MySQL.</p>
             </div>
         </section>
 
@@ -160,9 +254,10 @@
             <h2>Contact</h2>
             <p>Feel free to reach out:</p>
             <ul>
-                <li><a href="mailto:zrq77560371@gmail.com">Email</a></li>
+                <li><a href="mailto:zrq77560371@gmail.com">Email: zrq77560371@gmail.com</a></li>
                 <li><a href="https://github.com/Zhang-Ruiqi" target="_blank">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/ruiqi-rachel-zhang-baa576137" target="_blank">LinkedIn</a></li>
+                <li>Phone: (669)-258-6927</li>
             </ul>
         </section>
     </div>
